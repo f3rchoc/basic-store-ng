@@ -1,0 +1,20 @@
+<input type="text" [(ngModel)]="title">
+{{ title }}
+
+<input type="text" [(ngModel)] = "power">
+{{power | exponential}}
+
+<!-- div *ngFor="let product of products"></div-->
+
+<button (click)="addItem()">Add item</button>
+
+
+<ul>
+  <li *ngIf="items.length === 0">List empty </li>
+  <li *ngFor="let name of items; index as i">
+    {{i}}  - {{name}} 
+    <button (click)="deleteItem(i)">Delete</button>
+  </li>
+
+</ul>
+
