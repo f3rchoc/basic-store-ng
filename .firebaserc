@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "basic-store-6a4a4": {
+      "hosting": {
+        "basic-store-ng": [
+          "basic-store-6a4a4"
+        ]
+      }
+    }
+  }
+}
