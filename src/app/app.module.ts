@@ -25,7 +25,7 @@ import { HomeComponent } from './home/home.component';
 import { environment } from '../environments/environment';
 
 import { AngularFireModule } from '@angular/fire';
-import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 @NgModule({
@@ -53,8 +53,8 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
     MatButtonModule,
     LayoutModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAnalyticsModule,
-    AngularFirestoreModule
+    AngularFireAuthModule,
+    AngularFirestoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
