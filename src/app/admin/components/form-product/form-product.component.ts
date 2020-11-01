@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl} from '@angular/forms';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
-import { ProductsService } from './../../../core/services/products/products.service';
+import { ProductsService } from '@core/services/products/products.service';
 
 import { MyValidators } from './../../../utils/validators';
 
@@ -54,7 +54,7 @@ export class FormProductComponent implements OnInit {
       title: ['', [Validators.required]],
       price: ['', [Validators.required, MyValidators.isPriceValid]],
       image: [''],
-      description: ['', [Validators.required]],
+      description: ['', [Validators.required, Validators.minLength(10)]],
     });
   }
 
